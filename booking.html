@@ -1,0 +1,34 @@
+<form action="booking.php" method="post">
+<div class="elem-group">
+<label for="name">Your Name</label>
+<input type="text" id="name" name="passenger_name" placeholder="Sanjay" pattern=[A-Z\sa-z]{3,20} required><br>
+</div>
+<hr>
+<div class="elem-group">
+<label for="email">Email ID</label>
+<input type="email" id="email" name="passenger_email" placeholder="Sanjay1@gmail.com" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required><br>
+</div>
+<hr>
+<div class="elem-group">
+<label for="phone">phone number</label>
+<input type="tel" id="phone" name="passenger_phone" placeholder="1234567890" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required><br>
+</div>
+<hr>
+<div class="elem-group">
+<label for="Number">Number of people</label>
+<input type="number" id="num" name="number_of_people" placeholder="10" pattern=(\d{3}-?\s?(\d{4})) required><br>
+</div>
+<hr>
+<div class="elem-group inlined">
+<label for="time">Start Time</label>
+<input type="number" id="time" name="start_time" placeholder="2"min="1" required><br>
+</div>
+<hr>
+<div class="elem-group">
+<label for="text us">Text_us</label>
+<hr>
+<textarea id="message" name="passenger_message"placeholder="Tell us anything else that might be important."required></textarea>
+</div>
+<hr>
+<button type="submit">Book a volocopter or a helicopter</button><br>
+</form>
